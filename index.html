@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakeel personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/264684348b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">My Portfolio </h2> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project's</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-regular fa-circle-xmark" id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+            </nav>
+          <div id="firstleft">
+              <div class="header-text">
+                  <p><em>Tech-Explorer</em></p>
+                  <h1>HI, I'm <span> Shakeel</span><br>  I am passionate <br>
+                    <span id="element"></span>
+                </h1>
+            </div>
+            <div class="image">
+                <img src="images/developer.png" >
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!-- -----About info -->
+    <div id="about">
+        <div class="conatainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/js.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <big><strong>Name:</strong></big>Mohammed Shakeel <br>
+                    <big><strong>Age:</strong></big>20 <br>
+                    <p>I'm , currently pursuing a Bachelor of Computer Application (BCA) at Bearys Institute of Emerging Sciences, affiliated with Mangalore University. I possess a strong enthusiasm for exploring new dimensions within the Computer application filed  and am committed to expanding my expertise in this domain.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML CSS JavaScript</span><br>Proficient in creating web content using HTML,CSS and JavaScript, enabling the design of simple and effective webpages</li>
+                            <li><span>Java</span><br>Skilled in core Java programming, proficiently developing applications with a focus on object-oriented concepts.</li>
+                            <li><span>C Prgramming</span><br>Proficient in basic C programming, capable of implementing fundamental algorithms and logical structures</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Looking for Challenging position</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Currently studying BCA at Bearys Institute Emerging Sciences</li>
+                            <li><span>2020</span><br>PUC from Carmel Composite Pu Colloge</li>
+                            <li><span>2018</span><br>SSLC from Best english Medium school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Coding Insights</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>Code Crafting</h2>
+                    <p>Breaking Down Challenges into Logical Sequences</p>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Writting the Future</h2>
+                    <p>Each Line of Code Tells a Story</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding</h2>
+                    <p>Where Imagination Meets Virtual Reality</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Projects---- -->
+   <div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="pro-list">
+            <div class="pro">
+                <img src="images/atm.png">
+                <div class="layer">
+                    <h3>Bank Management system</h3>
+                    <p>Experience banking convenience with our java Swing Bank Management System.Seamlessly manage accounts,Change pin securely,and enjoy fast cash withdrawals.Check your balance and track transactions with ease.Simplify deposits and explore financial management,all in one  user-friendly interface</p>
+                    <a href="https://github.com/shakeel071/bank-management-system/tree/master/src"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/quiz.png">
+                <div class="layer">
+                    <h3>Quiz Application</h3>
+                    <p>Experience learning in an engaging way with our Quiz Application.Developed using Java Swing,this platform offers multiple-choice questions,life-line,scores,etc.The user friendly interface guarantees seamless experience</p>
+                    <a href="https://github.com/shakeel071/Quiz-Application"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="images/chat.png">
+                <div class="layer">
+                    <h3>Chatting Application</h3>
+                    <p>Connect seamlessly with our Java swing Chat Application.Experience real-time messaging through a user-friendly client-server architecture,fostering instant communication</p>
+                    <a href="https://github.com/shakeel071/Chatting-Apllication"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+<!-- --------------------Contact details-------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; www.shakeelprotfolio.com | All rights reserved</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Tech Learner', 'Aspiring Programmer','Future Web Developer','Student Developer'],
+            typeSpeed: 90,
+            loop:true
+        });
+    </script>
+     
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenus=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenus.style.right="0";
+    }
+    function closemenu(){
+        sidemenus.style.right="-200px";
+    }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
