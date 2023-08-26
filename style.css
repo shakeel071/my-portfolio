@@ -319,15 +319,16 @@ nav #fas{
     color: blue;
     font-size: 50px;
 }
+#header span{
+    color: blue;
+}
 /* -----------css for small screen--------- */
 
-/* -----------------css for small screen-------------------- */
 @media only screen and (max-width:600px){
     #firstleft{
         margin: -49px -36px 0px -39px;
         padding-bottom: 90px;
     }
-
 
     #firstleft .image img{
         width: 35vw;
@@ -335,10 +336,12 @@ nav #fas{
         margin: 60px 0px 0px -130px;
         
     }
+    
      .header-text P{
-        margin: 0px 25px;
+        margin: 0 25px;
      }
     .header-text{
+        
         margin-top: 50%;
         font-size: 16px;
          width: 100%;
@@ -346,6 +349,8 @@ nav #fas{
     .header-text h1{
         font-size: 30px;
         color: white;
+        padding-left: 20px;
+        
     }
     nav #fas{
         display: block;
@@ -382,15 +387,19 @@ nav #fas{
     }
     .sub-tittle{
         font-size: 40px;
+        
     }
     .about-col-1,.about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
         margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .about-col-2{
         font-size:14px;
+        padding-left: 40px;
     }
     .tab-links{
         font-size: 16px;
@@ -401,8 +410,18 @@ nav #fas{
     }
     .copyright{
         font-size: 14px;
-    }
-    
+    }   
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: white;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+   
+}
 }
 
 
