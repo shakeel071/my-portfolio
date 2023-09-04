@@ -49,7 +49,7 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1><br><br>
                     <big><strong>Name:</strong></big>Mohammed Shakeel <br>
-                    <big><strong>Age:</strong></big><span id="ageDisplay"></span><br>
+                    <big><strong>Age:</strong></big>20<br>
                     <p>I'm , currently pursuing a Bachelor of Computer Application (BCA) at Bearys Institute of Emerging Sciences, affiliated with Mangalore University. I possess a strong enthusiasm for exploring new dimensions within the Computer application filed  and am committed to expanding my expertise in this domain.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -202,34 +202,7 @@
         sidemenus.style.right="-200px";
     }
     </script>
-    <!-- ----------Script for Calculating Current Age ------ -->
-    <script>
-        function calculateAge(birthdate, currentDate) {
-            const birthdateObj = new Date(birthdate);
-            const currentDateObj = new Date(currentDate);
-
-            const years = currentDateObj.getFullYear() - birthdateObj.getFullYear();
-            const birthMonth = birthdateObj.getMonth();
-            const currentMonth = currentDateObj.getMonth();
-            const months = (currentMonth - birthMonth + 12) % 12;
-            const days = currentDateObj.getDate() - birthdateObj.getDate();
-
-            return `${years} years ${months} months ${days} days`;
-        }
-
-        const birthdate = "03-21-2003";
-        const ageDisplay = document.getElementById("ageDisplay");
-
-        function updateAgeDisplay() {
-            const currentDate = new Date();
-            const age = calculateAge(birthdate, currentDate);
-            ageDisplay.textContent = age;
-        }
-
-        // Update age display immediately and then every 1 second
-        updateAgeDisplay();
-        setInterval(updateAgeDisplay, 1000);
-    </script>
+  
 </body>
 </html>
 
